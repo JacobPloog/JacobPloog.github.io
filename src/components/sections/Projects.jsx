@@ -7,7 +7,7 @@ export const Projects = () => {
       className="min-h-screen flex items-center justify-center py-20"
     >
       <RevealOnScroll>
-        <div className="max-w-5xl mx-auto px-4 bg-black/75 py-4">
+        <div className="max-w-5xl mx-auto px-4 bg-black/75 py-4 rounded-md">
           <h2 className="text-3xl font-bold mb-8 bg-gradient-to-br from-pink-500 to-violet-600 bg-clip-text text-transparent text-center">
             Featured Projects
           </h2>
@@ -41,7 +41,7 @@ export const Projects = () => {
               </div>
               <div className="flex justify-between items-center">
                 <a
-                  href="#"
+                  href="https://github.com/JacobPloog/MECAZON"
                   className="text-purple-400 hover:text-purple-300 transition-colors my-4 "
                 >
                   View Project →
@@ -70,7 +70,7 @@ export const Projects = () => {
               </div>
               <div className="flex justify-between items-center">
                 <a
-                  href="#"
+                  href="https://github.com/JacobPloog/flight-match"
                   className="text-purple-400 hover:text-purple-300 transition-colors my-4 "
                 >
                   View Project →
@@ -89,11 +89,9 @@ export const Projects = () => {
               </p>
               <div className="flex flex-wrap gap-2 mb-4">
                 {[
-                  "React",
-                  "MongoDB",
+                  "Laravel",
+                  "Sqlite",
                   "Javascript",
-                  "Axios",
-                  "Vite",
                   "Node.js",
                 ].map((tech, key) => (
                   <span
@@ -106,7 +104,7 @@ export const Projects = () => {
               </div>
               <div className="flex justify-between items-center">
                 <a
-                  href="#"
+                  href="https://github.com/JacobPloog/laravel-task-app"
                   className="text-purple-400 hover:text-purple-300 transition-colors my-4 "
                 >
                   View Project →
@@ -114,7 +112,7 @@ export const Projects = () => {
               </div>
             </div>
             <div className="p-6 rounded-xl border border-white/10 hover:-translate-y-1 hover:border-purple-500/80 hover:shadow-[0_2px_8px_rgba(90, 34, 139,0.2)] transition-all">
-              <h3 className="text-xl font-bold mb-2">Flight Match Website</h3>
+              <h3 className="text-xl font-bold mb-2">Educational Gaming Mobile App</h3>
               <hr className="text-purple-500" />
               <p className="text-gray-400 mb-4">
                 Fully functional web application that mimics flight matching
@@ -135,7 +133,7 @@ export const Projects = () => {
               </div>
               <div className="flex justify-between items-center">
                 <a
-                  href="#"
+                  href="https://github.com/JacobPloog/FBLA-Mobile-App"
                   className="text-purple-400 hover:text-purple-300 transition-colors my-4 "
                 >
                   View Project →
