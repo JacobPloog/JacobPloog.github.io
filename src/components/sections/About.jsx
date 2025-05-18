@@ -25,8 +25,8 @@ export const About = () => {
       className="min-h-screen flex items-center justify-center py-20"
     >
       <RevealOnScroll>
-        <div className="max-w-3xl mx-auto px-4">
-          <h2 className="text-3xl font-bold mb-8 bg-gradient-to-r from-red-500 to-orange-400 bg-clip-text text-transparent text-center">
+        <div className="max-w-3xl mx-auto px-4 bg-black/75 py-4 rounded-md">
+          <h2 className="text-3xl font-bold mb-8 bg-gradient-to-br from-pink-500 to-violet-600 bg-clip-text text-transparent text-center">
             About Me
           </h2>
           <div className="rounded-xl p-8 border-white/10 border hover:-translate-y-1 transition all">
@@ -41,7 +41,7 @@ export const About = () => {
                   {frontendSkills.map((tech, key) => (
                     <span
                       key={key}
-                      className="bg-red-500/10 text-red-500 py-1 px-3 rounded-full text-sm hover:bg-red-500/20 hover:shadow-[0_2px_8px_rgba(246,0,0,0.2)] transition-all"
+                      className="bg-purple-500/10 text-purple-500 py-1 px-3 rounded-full text-sm hover:bg-purple-500/20 hover:shadow-[0_2px_8px_rgba(90, 34, 139,0.2)] transition-all"
                     >
                       {tech}
                     </span>
@@ -54,7 +54,7 @@ export const About = () => {
                   {backendSkills.map((tech, key) => (
                     <span
                       key={key}
-                      className="bg-red-500/10 text-red-500 py-1 px-3 rounded-full text-sm hover:bg-red-500/20 hover:shadow-[0_2px_8px_rgba(246,0,0,0.2)]"
+                      className="bg-purple-500/10 text-purple-500 py-1 px-3 rounded-full text-sm hover:bg-purple-500/20 hover:shadow-[0_2px_8px_rgba(90, 34, 139,0.2)]"
                     >
                       {tech}
                     </span>

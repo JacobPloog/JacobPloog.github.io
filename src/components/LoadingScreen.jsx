@@ -2,15 +2,16 @@ import { useEffect, useState } from "react";
 
 export const LoadingScreen = ({ onComplete }) => {
   const [text, setText] = useState("");
-  const fullText = "<Hello World/>";
+  const fullText = ["<Hello World/>", "<div><div/>", "<Syntax Error/>", "<Reference Error/>"];
 
   useEffect(() => {
     let index = 0;
+    let randomText = Math.floor(Math.random() * fullText.length)
     const interval = setInterval(() => {
-      setText(fullText.substring(0, index));
+      setText(fullText[randomText].substring(0, index));
       index++;
 
-      if (index > fullText.length) {
+      if (index > fullText[randomText].length) {
         clearInterval(interval);
 
         setTimeout(() => {
@@ -28,8 +29,8 @@ export const LoadingScreen = ({ onComplete }) => {
         {text}
         <span className="animate-blink ml-1">|</span>
       </div>
-      <div className="w-[200px] h-[2px] bg-gray-800 rounded -relativ overlow-hidden">
-        <div className="w-[40%] h-full bg-red-500 shadow-[0_0_15px_#3b82f6] animate-loading-bar">
+      <div className="w-[300px] h-[2px] bg-gray-800 rounded -relative overflow-hidden">
+        <div className="w-[40%] h-full bg-purple-500 shadow-[0_0_15px_#3b82f6] animate-loading-bar">
           {""}
         </div>
       </div>
