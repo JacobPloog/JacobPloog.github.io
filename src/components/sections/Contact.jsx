@@ -9,6 +9,8 @@ export const Contact = () => {
     message: "",
   });
 
+
+
   const handleSubmit = (e) => {
     e.preventDefault();
 
